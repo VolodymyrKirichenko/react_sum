@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import { SumList } from './components/SumList.tsx';
 
 const numberList = [{
@@ -20,5 +20,9 @@ const numberList = [{
 }];
 
 export const App = () => (
-  <SumList numberList={numberList} />
+  <div className="container container__wrapper">
+    <div className="container__calculator">
+      <SumList numberList={numberList} />
+    </div>
+  </div>
 );
